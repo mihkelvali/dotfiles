@@ -1,0 +1,23 @@
+font-family = Symbols Nerd Font Mono
+font-family = Berkeley Mono
+font-family-italic = "Maple Mono"
+font-family-bold-italic = "Maple Mono"
+font-size = 16
+window-title-font-family = "Maple Mono"
+window-height = 45
+window-width = 160
+window-save-state = always
+
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+
+gtk-tabs-location = top
+
+# ghostty +list-themes
+theme = Catppuccin Mocha
+
+# keymaps
+keybind = global:cmd+`=toggle_quick_terminal
+keybind = shift+ctrl+left_bracket=previous_tab
+keybind = shift+ctrl+right_bracket=next_tab
+

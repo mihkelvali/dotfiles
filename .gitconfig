@@ -1,0 +1,51 @@
+[user]
+  email = mihkel.vali@hotmail.com
+	name = mihkelvali
+[log]
+  graph = auto
+  decorate = auto
+[alias]
+  lg = log --graph --abbrev-commit --decorate --date=relative
+  lgo = log --graph --abbrev-commit --decorate --date=relative --oneline
+  lga = log --graph --abbrev-commit --decorate --date=relative --all
+  lgoa = log --graph --abbrev-commit --decorate --date=relative --oneline --all
+
+  co = checkout
+  ci = commit
+  br = branch
+  st = status
+  rb = rebase
+  rbc = rebase --continue
+  ft = fetch
+  ftap = fetch --prune
+  sh = stash
+  cp = cherry-pick
+  rt = reset
+  rs = restore
+  rl = reflog
+  cl = clone
+[push]
+  default = current
+[core]
+  editor = nvim
+  excludesfile = /Users/mihkelvali/.gitignore
+  # pager = less -RXF
+  autocrlf = input
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+[merge]
+  conflictstyle = diff3
+[diff]
+    colorMoved = default
+[filter "lfs"]
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+[init]
+  defaultBranch = main
+
